@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador/Decodificador Base64</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="welcome-screen" class="container">
+        <h1>Bienvenido</h1>
+        <p>¿Qué te gustaría hacer?</p>
+        <div class="button-group">
+            <button onclick="startEncode()">Codificar a Base64</button>
+            <button onclick="startDecode()">Decodificar de Base64</button>
+        </div>
+    </div>
+    <div id="main-screen" class="container" style="display: none;">
+        <h1>
+            <a href="index.html">Codificador/Decodificador Base64</a>
+        </h1>
+        <p id="mode-indicator">Modo: Codificar</p>
+        <div class="input-group">
+            <textarea id="input-text" placeholder="Introduce tu texto: "></textarea>
+        </div>
+        <div class="button-group">
+            <button onclick="processText()">Procesar</button>
+            <button onclick="toggleAction()" id="toggle-btn">Cambiar a Decodificar</button>
+        </div>
+        <div class="output-group">
+            <textarea id="output-text" placeholder="Resultado:" readonly></textarea>
+        </div>
+    </div>
+    <footer>
+        <p>Hecho por <a href="https://www.instagram.com/dannlefevregtz" target="_blank">dannlefevregtz</a>.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
